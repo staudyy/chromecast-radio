@@ -4,6 +4,9 @@ Chromecast Radio is a web application that allows you to play online radio/music
 ## Downloads
 Download and extract the [latest release](https://github.com/staudyy/chromecast-radio/releases) or clone this repository.
 
+## Live Demo
+Check out the [live demo](https://chromecastradio.netlify.app/) which showcases the UI!
+
 ## Getting Started
 1. **Get Chromecast Names**  
 If you know the name of your chromecast you can skip this step (the name that appears in every application that supports cast.) If not navigate to ```/tools/find_chromecasts``` and run ```find_chromecasts.py```. This script will print all available chromecast names in the console. We will refer to these names as **"friendly names"**.
