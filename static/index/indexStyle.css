@@ -1,0 +1,221 @@
+:root {
+    --white-hover: #f2f2f2;
+    --main-gray: #e6e6e6;
+    --main-gray-hover: #d9d9d9;
+    --main-gray-border: #bfbfbf;
+    --secondary-gray: #808080;
+    --main-blue: #b6daf2;
+    --main-blue-hover: #a3c3d9;
+    --main-blue-border: #7c95a6;
+    --main-purple: #e6b6f2;
+    --main-purple-hover: #cea3d9;
+    --main-purple-border: #b68fbf;
+}
+
+body {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+option {
+    cursor: pointer;
+}
+
+.text {
+    margin: auto;
+    display: table;
+    vertical-align: middle;
+    line-height: 8vh;
+}
+
+.textContainer {
+    height: 8vh;
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.button {
+    width: 80%;
+    height: 80%;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: min(6vh, 10vw);
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    border-radius: 2vmin;
+    transition: background-color 0.2s;
+}
+
+.stanica-btn {
+    color: #000000;
+    border: 3px solid var(--main-gray-hover);
+    transition: background-color 0.2s;
+}
+
+.stanica-btn:hover {
+    color: #000000;
+    background-color: var(--white-hover);
+}
+
+.stanica-btn.active {
+    color: #000000;
+    background-color: var(--main-blue);
+    border: 3px solid var(--main-blue-border);
+}
+
+.chromecastSelect {
+    color: #000000;
+    border: 2px solid var(--main-gray);
+    background-color: var(--main-gray);
+    text-align: center;
+    font-size: 4vmin;
+    border-radius: 2vmin;
+    display: inline;
+    flex-direction: column;
+    margin: auto;
+    transition: background-color 0.2s;
+}
+
+.selectButton:checked + .chromecastSelect {
+    color: #000000;
+    border: 2px solid var(--main-blue-border);
+    background-color: var(--main-blue);
+}
+
+.selectButton:hover:not(:checked) + .chromecastSelect {
+    color: #000000;
+    background-color: var(--main-gray-hover);
+}
+
+/* Fix overlap (dont know why it happens) */
+.btn-group-separators > .btn {
+    margin-left: 0px !important;
+}
+
+.btn-group-separators > .btn:not(:last-child) {
+    margin-right: 0px;
+}
+
+#cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    z-index: 1000;
+}
+
+#statusText {
+    font-size: 8vmin;
+}
+
+#volume {
+    font-size: 6vmin;
+    margin: auto;
+    display: table;
+    vertical-align: middle;
+}
+
+#vybrana {
+    font-size: 5vmin;
+}
+
+#buttonOn {
+    background-color: var(--main-blue);
+}
+
+#buttonOn:hover {
+    background-color: var(--main-blue-hover);
+}
+
+#buttonOff {
+    background-color: var(--main-purple);
+}
+
+#buttonOff:hover {
+    background-color: var(--main-purple-hover);
+}
+
+#stanice {
+    height: 100%;
+    width: 100%;
+    font-size: 6vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+#stanice button {
+    flex: 1;
+    border-width: 2px;
+}
+
+#staniceContainer {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#mainTable {
+    margin: auto;
+    table-layout: fixed;
+    width: 95vw;
+    height: 70vh;
+    text-align: center;
+}
+
+#mainTable tr {
+    height: 25%;
+}
+
+
+/*SLIDER*/
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    appearance: none;
+    width: 90%;
+    height: 4vmin;
+    border-radius: 2vmin;
+    background: var(--main-gray-hover);
+    outline: none;
+    opacity: 0.65;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    appearance: none;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 3vmin;
+    height: 3vmin;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#customSelect {
+    list-style-type: none;
+}

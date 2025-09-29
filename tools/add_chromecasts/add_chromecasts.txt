@@ -1,0 +1,5 @@
+Chomecast 1
+FRIENDLY NAME
+
+Chomecast 2
+OTHER FRIENDLY NAME
